@@ -76,7 +76,8 @@
 					"options": {
 						"port": 4400,
 						"publicHost": "http://localhost:4400",
-						"extraWebpackConfig": "webpack.config.js"
+						"extraWebpackConfig": "webpack.config.js",
+						"proxyConfig": "./proxy.conf.json"
 					}
 				},
 				"extract-i18n": {

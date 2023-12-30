@@ -1,0 +1,6 @@
+{
+    "/shop-folder-login-assets":{
+        "target": "http://localhost:4300",
+        "secure": false
+    }
+}
