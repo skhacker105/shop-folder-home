@@ -38,8 +38,7 @@ module.exports = {
         
         // For hosts (please adjust)
         remotes: {
-            "shopFolderLogin": "http://localhost:4300/remoteEntry.js",
-
+            "shopFolderLogin": "http://localhost:4300/remoteEntry.js"
         },
 
         shared: {...shareAll({ singleton: true, strictVersion: true, requiredVersion: "auto" })}
