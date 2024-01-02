@@ -64,6 +64,14 @@
                     icon: 'edit_note'
                 }"></ng-template>
                 <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Packing',
+                    icon: 'redeem'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Ship',
+                    icon: 'local_shipping'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
                     text: 'All',
                     icon: 'crop_square'
                 }"></ng-template>
@@ -83,6 +91,14 @@
                     icon: 'edit_note'
                 }"></ng-template>
                 <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Packing',
+                    icon: 'redeem'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Ship',
+                    icon: 'local_shipping'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
                     text: 'All',
                     icon: 'crop_square'
                 }"></ng-template>
@@ -96,15 +112,19 @@
                 <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
                         text: 'Money',
                         icon: 'add'
-                    }"></ng-template>
+                }"></ng-template>
                 <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
                         text: 'Money',
                         icon: 'remove'
-                    }"></ng-template>
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                        text: 'Via',
+                        icon: 'swap_calls'
+                }"></ng-template>
                 <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
                         text: 'All',
                         icon: 'crop_square'
-                    }"></ng-template>
+                }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
 
@@ -113,8 +133,8 @@
             <lib-ledger-logo logo colorTheme="ledger-dashboard"></lib-ledger-logo>
             <ng-container action>
                 <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
-                    text: 'All',
-                    icon: 'crop_square'
+                    text: 'Search',
+                    icon: 'search'
                 }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
