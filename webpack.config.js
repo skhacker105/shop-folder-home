@@ -11,8 +11,7 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "shopFolderHome",
-    publicPath: "auto",
-    scriptType: "text/javascript"
+    publicPath: "auto"
   },
   optimization: {
     runtimeChunk: false
@@ -32,9 +31,9 @@ module.exports = {
         // For remotes (please adjust)
         name: "shopFolderHome",
         filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './/src/app/app.component.ts',
-        // },        
+        exposes: {
+          './routes': './/src/app/app.routes.ts',
+        },        
         
         // For hosts (please adjust)
         remotes: {

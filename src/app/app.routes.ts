@@ -5,8 +5,7 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 export const routes: Routes = [
     {
         path: '',
-        pathMatch:'full',
-        redirectTo: 'login'
+        component: AppHomeComponent
     },
     {
         path: 'login',
@@ -15,9 +14,5 @@ export const routes: Routes = [
             remoteEntry: 'http://localhost:4300/remoteEntry.js',
             exposedModule: './routes'
         }).then(m => m.routes)
-    },
-    {
-        path: 'home',
-        component: AppHomeComponent
     }
 ];
