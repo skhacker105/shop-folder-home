@@ -2,69 +2,183 @@
     <ng-container pagebody>
 
         <!-- Contact -->
-        <lib-dashboard-box title="CONTACT" colorTheme="contact-dashboard">
+        <lib-dashboard-box title="CONTACT" colorTheme="contact-dashboard" [isExpanded]="allExpanded">
             <lib-contact-logo logo colorTheme="contact-dashboard"></lib-contact-logo>
             <ng-container action>
-                <mat-icon matRipple>add</mat-icon>
-                <mat-icon matRipple>chevron_right</mat-icon>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'New',
+                    icon: 'add'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Upload',
+                    icon: 'upload_file'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Sync',
+                    icon: 'sync'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'All',
+                    icon: 'crop_square'
+                }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
 
         <!-- Inventory -->
-        <lib-dashboard-box title="INVENTORY" colorTheme="inventory-dashboard">
+        <lib-dashboard-box title="INVENTORY" colorTheme="inventory-dashboard" [isExpanded]="allExpanded">
             <lib-inventory-logo logo colorTheme="inventory-dashboard"></lib-inventory-logo>
             <ng-container action>
-                <mat-icon matRipple>chevron_right</mat-icon>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Product',
+                    icon: 'add'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Store',
+                    icon: 'store'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Add',
+                    icon: 'add_business'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Maintain',
+                    icon: 'build'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'All',
+                    icon: 'crop_square'
+                }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
 
         <!-- Sales -->
-        <lib-dashboard-box title="SALES" colorTheme="sales-dashboard">
+        <lib-dashboard-box title="SALES" colorTheme="sales-dashboard" badge="2" [isExpanded]="allExpanded">
             <lib-sales-logo logo colorTheme="sales-dashboard"></lib-sales-logo>
             <ng-container action>
-                <mat-icon matRipple>chevron_right</mat-icon>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Order',
+                    icon: 'add'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Drafts',
+                    icon: 'edit_note'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'All',
+                    icon: 'crop_square'
+                }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
 
         <!-- Purchase -->
-        <lib-dashboard-box title="PURCHASE" colorTheme="purchase-dashboard">
+        <lib-dashboard-box title="PURCHASE" colorTheme="purchase-dashboard" [isExpanded]="allExpanded">
             <lib-purchase-logo logo colorTheme="purchase-dashboard"></lib-purchase-logo>
             <ng-container action>
-                <mat-icon matRipple>chevron_right</mat-icon>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Order',
+                    icon: 'add'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'Drafts',
+                    icon: 'edit_note'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'All',
+                    icon: 'crop_square'
+                }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
 
         <!-- Transaction -->
-        <lib-dashboard-box title="TRANSACTION" colorTheme="transaction-dashboard">
+        <lib-dashboard-box title="TRANSACTION" colorTheme="transaction-dashboard" [isExpanded]="allExpanded">
             <lib-transaction-logo logo colorTheme="transaction-dashboard"></lib-transaction-logo>
             <ng-container action>
-                <mat-icon matRipple>chevron_right</mat-icon>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                        text: 'Money',
+                        icon: 'add'
+                    }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                        text: 'Money',
+                        icon: 'remove'
+                    }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                        text: 'All',
+                        icon: 'crop_square'
+                    }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
 
         <!-- Ledger -->
-        <lib-dashboard-box title="LEDGER" colorTheme="ledger-dashboard">
+        <lib-dashboard-box title="LEDGER" colorTheme="ledger-dashboard" [isExpanded]="allExpanded">
             <lib-ledger-logo logo colorTheme="ledger-dashboard"></lib-ledger-logo>
             <ng-container action>
-                <mat-icon matRipple>chevron_right</mat-icon>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'All',
+                    icon: 'crop_square'
+                }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
 
         <!-- TODO -->
-        <lib-dashboard-box title="TODO" colorTheme="todo-dashboard">
+        <lib-dashboard-box title="TODO" colorTheme="todo-dashboard" [isExpanded]="allExpanded">
             <lib-todo-logo logo colorTheme="todo-dashboard"></lib-todo-logo>
             <ng-container action>
-                <mat-icon matRipple>chevron_right</mat-icon>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                        text: 'Todo',
+                        icon: 'add'
+                    }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                            text: 'Drats',
+                            icon: 'edit_note'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                            text: 'Working',
+                            icon: 'workspaces'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                            text: 'Done',
+                            icon: 'done'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                        text: 'All',
+                        icon: 'crop_square'
+                    }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
 
         <!-- Catalog -->
-        <lib-dashboard-box title="CATALOG" colorTheme="catalog-dashboard">
+        <lib-dashboard-box title="CATALOG" colorTheme="catalog-dashboard" [isExpanded]="allExpanded">
             <lib-catalog-logo logo colorTheme="catalog-dashboard"></lib-catalog-logo>
             <ng-container action>
-                <mat-icon matRipple>chevron_right</mat-icon>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'New',
+                    icon: 'add'
+                }"></ng-template>
+                <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
+                    text: 'All',
+                    icon: 'crop_square'
+                }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
 
     </ng-container>
+
+    <ng-container pagefooter>
+        <div class="footer">
+            <div class="spacer"></div>
+            @if (allExpanded) {
+            <mat-icon (click)="allExpanded = false">toggle_off</mat-icon>
+            }
+            @else {
+            <mat-icon (click)="allExpanded = true">toggle_on</mat-icon>
+            }
+        </div>
+    </ng-container>
 </lib-page-layout>
+
+<ng-template #actionTemplateRef let-icon="icon" let-text="text">
+    <div>
+        <mat-icon matRipple>{{ icon }}</mat-icon>
+        <div> {{ text }} </div>
+    </div>
+</ng-template>

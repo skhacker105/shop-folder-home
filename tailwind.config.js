@@ -31,57 +31,57 @@ module.exports = {
         "contact": {
           "dashboard": {
             "logo": 'transparent',
-            "box": '#ed7966',
-            "title": '#a95547'
+            "box": '#6d5e00c2',
+            "title": '#6d5e00'
           }
         },
         "todo": {
           "dashboard": {
             "logo": 'transparent',
-            "box": '#1b4d89',
-            "title": '#102a48'
+            "box": '#00006dc2',
+            "title": '#0000FF'
           }
         },
         "sales": {
           "dashboard": {
             "logo": 'transparent',
-            "box": '#f9e45b',
-            "title": '#ad9f3d'
+            "box": '#550081d4',
+            "title": '#5a0a43'
           }
         },
         "purchase": {
           "dashboard": {
             "logo": 'transparent',
-            "box": '#6db784',
-            "title": '#58926a'
+            "box": '#550081d4',
+            "title": '#5a0a43'
           }
         },
         "inventory": {
           "dashboard": {
             "logo": 'transparent',
-            "box": '#141850',
-            "title": '#272f92'
+            "box": '#550081d4',
+            "title": '#5a0a43'
           }
         },
         "catalog": {
           "dashboard": {
             "logo": 'transparent',
-            "box": '#c8d8e4',
-            "title": '#668195'
+            "box": '#00006dc2',
+            "title": '#0000FF'
           }
         },
         "transaction": {
           "dashboard": {
             "logo": 'transparent',
-            "box": '#5bccf6',
-            "title": '#209ac7'
+            "box": '#00556dc2',
+            "title": '#00556d'
           }
         },
         "ledger": {
           "dashboard": {
             "logo": 'transparent',
-            "box": '#10d483',
-            "title": '#416a59'
+            "box": '#00556dc2',
+            "title": '#00556d'
           }
         }
       },
@@ -103,7 +103,7 @@ module.exports = {
         },
         "sales": {
           "dashboard": {
-            "box": '#102a48',
+            "box": '#ffffff',
             "title": '#ffffff'
           }
         },
@@ -121,7 +121,7 @@ module.exports = {
         },
         "catalog": {
           "dashboard": {
-            "box": '#2b6777',
+            "box": '#ffffff',
             "title": '#ffffff'
           }
         },
