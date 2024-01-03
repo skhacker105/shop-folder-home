@@ -5,12 +5,13 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatBadgeModule } from '@angular/material/badge';
 import { CatalogLogoComponent, ContactLogoComponent, InventoryLogoComponent, LedgerLogoComponent, OrderLogoComponent, PurchaseLogoComponent, SalesLogoComponent, TodoLogoComponent, TransactionLogoComponent } from 'shop-folder-logo';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    CommonModule, PageLayoutComponent, DashboardBoxComponent, MatIconModule, MatRippleModule, ContactLogoComponent,
+    CommonModule, RouterModule, PageLayoutComponent, DashboardBoxComponent, MatIconModule, MatRippleModule, ContactLogoComponent,
     CatalogLogoComponent, InventoryLogoComponent, LedgerLogoComponent, OrderLogoComponent, PurchaseLogoComponent,
     SalesLogoComponent, TodoLogoComponent, TransactionLogoComponent,
     MatBadgeModule],

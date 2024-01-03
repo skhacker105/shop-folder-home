@@ -19,7 +19,8 @@
                 }"></ng-template>
                 <ng-template [ngTemplateOutlet]="actionTemplateRef" [ngTemplateOutletContext]="{
                     text: 'All',
-                    icon: 'crop_square'
+                    icon: 'crop_square',
+                    route: '/contact'
                 }"></ng-template>
             </ng-container>
         </lib-dashboard-box>
@@ -196,8 +197,8 @@
     </ng-container>
 </lib-page-layout>
 
-<ng-template #actionTemplateRef let-icon="icon" let-text="text">
-    <div>
+<ng-template #actionTemplateRef let-icon="icon" let-text="text" let-route="route">
+    <div [routerLink]="[route]">
         <mat-icon matRipple>{{ icon }}</mat-icon>
         <div> {{ text }} </div>
     </div>
