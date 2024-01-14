@@ -1,0 +1,11 @@
+<div [routerLink]="[route]" matRipple [matRippleColor]="matRippleColor" [matRippleDisabled]="disabled">
+    <mat-icon [ngClass]="{ 'disable': disabled }">
+        @if (icon) {
+        {{ icon }}
+        }
+        @else {
+        <ng-content></ng-content>
+        }
+    </mat-icon>
+    <div [ngClass]="{ 'disable': disabled }"> {{ text }} </div>
+</div>
