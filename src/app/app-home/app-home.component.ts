@@ -3,7 +3,7 @@ import { DashboardBoxComponent, PageLayoutComponent } from 'shop-folder-componen
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
 import { MatBadgeModule } from '@angular/material/badge';
-import { CatalogLogoComponent, ContactLogoComponent, InventoryLogoComponent, LedgerLogoComponent, LoadingLogoComponent, OrderLogoComponent, PackingLogoComponent, ProgressLogoComponent, PurchaseLogoComponent, RawMaterialLogoComponent, ReturnLogoComponent, RupeeLogoComponent, SalesLogoComponent, ShippingLogoComponent, TodoLogoComponent, TransactionLogoComponent, VendorLogoComponent, WasteLogoComponent, ReceiptLogoComponent, OnTheWayLogoComponent, WorkingLogoComponent, GroupLogoComponent, ReadyLogoComponent, CalendarLogoComponent, SignInLogoComponent, SignOutLogoComponent, AdjustLogoComponent } from 'shop-folder-logo';
+import { CatalogLogoComponent, ContactLogoComponent, InventoryLogoComponent, LedgerLogoComponent, LoadingLogoComponent, OrderLogoComponent, PackingLogoComponent, ProgressLogoComponent, PurchaseLogoComponent, RawMaterialLogoComponent, ReturnLogoComponent, RupeeLogoComponent, SalesLogoComponent, ShippingLogoComponent, TodoLogoComponent, TransactionLogoComponent, VendorLogoComponent, WasteLogoComponent, ReceiptLogoComponent, OnTheWayLogoComponent, WorkingLogoComponent, GroupLogoComponent, ReadyLogoComponent, CalendarLogoComponent, SignInLogoComponent, SignOutLogoComponent, AdjustLogoComponent, TodoBacklogLogoComponent } from 'shop-folder-logo';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ActionComponent } from '../action/action.component';
@@ -17,7 +17,7 @@ import { ActionComponent } from '../action/action.component';
     SalesLogoComponent, TodoLogoComponent, TransactionLogoComponent, RawMaterialLogoComponent, ProgressLogoComponent, RupeeLogoComponent, WasteLogoComponent,
     VendorLogoComponent, ShippingLogoComponent, LoadingLogoComponent,ReturnLogoComponent, ReceiptLogoComponent, OnTheWayLogoComponent, WorkingLogoComponent,
     GroupLogoComponent, ReadyLogoComponent, CalendarLogoComponent, SignInLogoComponent, SignOutLogoComponent,
-    MatBadgeModule],
+    MatBadgeModule, TodoBacklogLogoComponent],
   templateUrl: './app-home.component.html',
   styleUrl: './app-home.component.scss'
 })

@@ -61,7 +61,7 @@
                 <app-action [disabled]="true" text="Waste" route="">
                     <lib-waste-logo colorTheme="dashboard"></lib-waste-logo>
                 </app-action>
-                <app-action [disabled]="true" text="Build" route="" icon="build"></app-action>
+                <app-action [disabled]="true" text="Fix" route="" icon="build"></app-action>
                 <app-action [disabled]="true" text="All" route="" icon="crop_square"></app-action>
             </ng-container>
         </lib-dashboard-box>
@@ -72,7 +72,9 @@
             <ng-container action>
                 <app-action [disabled]="true" text="Order" route="" icon="add"></app-action>
                 <app-action [disabled]="true" text="Drafts" route="" icon="edit_note"></app-action>
-                <app-action [disabled]="true" text="Bill" route="" icon="add"></app-action>
+                <app-action [disabled]="true" text="Orders" route="">
+                    <lib-order-logo colorTheme="dashboard"></lib-order-logo>
+                </app-action>
                 <app-action [disabled]="true" text="Bills" route="">
                     <lib-receipt-logo colorTheme="dashboard"></lib-receipt-logo>
                 </app-action>
@@ -90,7 +92,9 @@
             <ng-container action>
                 <app-action [disabled]="true" text="Order" route="" icon="add"></app-action>
                 <app-action [disabled]="true" text="Drafts" route="" icon="edit_note"></app-action>
-                <app-action [disabled]="true" text="Bill" route="" icon="add"></app-action>
+                <app-action [disabled]="true" text="Orders" route="">
+                    <lib-order-logo colorTheme="dashboard"></lib-order-logo>
+                </app-action>
                 <app-action [disabled]="true" text="Bills" route="">
                     <lib-receipt-logo colorTheme="dashboard"></lib-receipt-logo>
                 </app-action>
@@ -106,12 +110,13 @@
         <lib-dashboard-box title="PACKING" colorTheme="dashboard" badge="2" [isExpanded]="allExpanded">
             <lib-packing-logo logo colorTheme="dashboard-title"></lib-packing-logo>
             <ng-container action>
-                <app-action [disabled]="true" text="Start" route="" icon="add"></app-action>
+                <app-action [disabled]="true" text="Ready" route="">
+                    <lib-ready-logo colorTheme="dashboard"></lib-ready-logo>
+                </app-action>
                 <app-action [disabled]="true" text="Progress" route="">
                     <lib-progress-logo colorTheme="dashboard"></lib-progress-logo>
                 </app-action>
                 <app-action [disabled]="true" text="Packed" route="" icon="redeem"></app-action>
-                <app-action [disabled]="true" text="Ship" route="" icon="local_shipping"></app-action>
                 <app-action [disabled]="true" text="All" route="" icon="crop_square"></app-action>
             </ng-container>
         </lib-dashboard-box>
@@ -158,8 +163,9 @@
         <lib-dashboard-box title="TODO" colorTheme="dashboard" [isExpanded]="allExpanded">
             <lib-todo-logo logo colorTheme="dashboard-title"></lib-todo-logo>
             <ng-container action>
-                <app-action [disabled]="true" text="Todo" route="" icon="search"></app-action>
-                <app-action [disabled]="true" text="Drafts" route="" icon="edit_note"></app-action>
+                <app-action [disabled]="true" text="Backlog" route="">
+                    <lib-todo-backlog-logo colorTheme="dashboard"></lib-todo-backlog-logo>
+                </app-action>
                 <app-action [disabled]="true" text="Working" route="">
                     <lib-working-logo colorTheme="dashboard"></lib-working-logo>
                 </app-action>
