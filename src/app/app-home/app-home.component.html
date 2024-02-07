@@ -9,13 +9,13 @@
                 <app-action [disabled]="true" text="Group" route="">
                     <lib-group-logo colorTheme="dashboard"></lib-group-logo>
                 </app-action>
-                <app-action [disabled]="true" text="Vendor" route="">
+                <app-action text="Vendor" route="/contact/home" [queryParams]="{types:'Vendor'}">
                     <lib-vendor-logo colorTheme="dashboard"></lib-vendor-logo>
                 </app-action>
-                <app-action [disabled]="true" text="Supplier" route="">
+                <app-action text="Supplier" route="/contact/home" [queryParams]="{types:'Supplier'}">
                     <lib-vendor-logo colorTheme="dashboard"></lib-vendor-logo>
                 </app-action>
-                <app-action [disabled]="true" text="Client" route="">
+                <app-action text="Client" route="/contact/home" [queryParams]="{types:'Client'}">
                     <lib-vendor-logo colorTheme="dashboard"></lib-vendor-logo>
                 </app-action>
                 <app-action [disabled]="true" text="Sync" route="" icon="sync"></app-action>
