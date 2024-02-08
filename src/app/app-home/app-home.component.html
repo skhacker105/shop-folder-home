@@ -6,7 +6,7 @@
             <lib-contact-logo logo colorTheme="dashboard-title"></lib-contact-logo>
             <ng-container action>
                 <app-action [disabled]="true" text="New" route="" icon="add"></app-action>
-                <app-action [disabled]="true" text="Group" route="">
+                <app-action text="Group" route="/contact/groups">
                     <lib-group-logo colorTheme="dashboard"></lib-group-logo>
                 </app-action>
                 <app-action text="Vendor" route="/contact/home" [queryParams]="{types:'Vendor'}">
